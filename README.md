@@ -2,6 +2,8 @@
 
 A CesiumJS 3D globe that maps Earth, Moon, and Mars sites showing why terrestrial locations — deserts, lava tubes, craters — serve as analogs for lunar and Martian exploration. Features NASA imagery, climate data, twin-site links, and Shastra, an AI assistant. Built for the NASA Space Apps "Earth: An Analog for the Moon and Mars" challenge.
 
+Access the site here: atlan-pi.vercel.app
+
 ## Features
 
 - **Three globes** — Earth, Moon, and Mars with real NASA imagery (ESRI, LRO WAC, Viking, THEMIS, CTX, Kaguya)
