@@ -1,6 +1,6 @@
 # Atlan
 
-A CesiumJS 3D globe that maps Earth, Moon, and Mars sites showing why terrestrial locations — deserts, lava tubes, craters — serve as analogs for lunar and Martian exploration. Features NASA imagery, climate data, twin-site links, and Shastra, an AI assistant. Built for the NASA Space Apps "Earth: An Analog for the Moon and Mars" challenge.
+A CesiumJS 3D globe that maps Earth, Moon, and Mars sites showing why terrestrial locations — deserts, lava tubes, craters  serve as analogs for lunar and Martian exploration. Features NASA imagery, climate data, twin-site links, and Shastra, an AI assistant. Built for the NASA Space Apps "Earth: An Analog for the Moon and Mars" challenge.
 
 ### Access the site here:  [atlan](atlan-pi.vercel.app)
 
@@ -33,14 +33,6 @@ npm run dev
 
 Open `http://localhost:5173` in your browser.
 
-### Environment Variables (optional)
-
-Create a `.env` file:
-
-```env
-VITE_CESIUM_ION_TOKEN=your_token_here   # enables 3D terrain + Moon/Mars tilesets
-VITE_GROQ_API_KEY=your_key_here         # enables live AI (Shastra works without it too)
-```
 
 ## Build
 
@@ -49,26 +41,6 @@ npm run build
 npm run preview
 ```
 
-## Project Structure
-
-```
-src/
-  globe/
-    engine.ts       — CesiumJS viewer, camera, render pump
-    layers.ts       — imagery layer definitions (Earth/Moon/Mars)
-  data/
-    sites/          — site databases (earth-india, earth-usa, earth-global, moon, mars)
-    climate.ts      — NASA POWER climate lookup
-    types.ts        — TypeScript interfaces
-  ai/
-    shastra.ts      — AI chatbot engine (works offline with pattern matching)
-  components/
-    Controls.tsx    — zoom, 2D/3D, compass, layers panel
-    SitePanel.tsx   — site detail sidebar
-    ShastraChat.tsx — chat UI with resize
-  styles/
-    app.css         — all styles
-```
 
 ## Data Sources
 
@@ -82,10 +54,3 @@ src/
 | NASA POWER | Climate data for Earth sites |
 | Cesium Ion | 3D terrain + Moon/Mars tilesets (optional) |
 
-## Team
-
-Built by students at SRM University, AP.
-
-## License
-
-MIT
